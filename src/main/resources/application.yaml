@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: crypto-transfer-optimizer
+exchange:
+  bynex:
+    trading-fee:
+      individuals:
+        taker: 0.25
+        maker: 0.025
+        pairs-with-ICO-tokens: 0.02
+      legal-entities:
+        taker: 0.25
+        maker: 0.25
+        pairs-with-ICO-tokens: 0.02
+
