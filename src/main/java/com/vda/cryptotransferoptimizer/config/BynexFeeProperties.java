@@ -1,5 +1,6 @@
 package com.vda.cryptotransferoptimizer.config;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -15,15 +16,13 @@ public class BynexFeeProperties {
 
     private TradingFee tradingFee;
 
-    @Getter
-    @Setter
+    @Data
     public static class TradingFee {
         private FeeGroup individuals;
         private FeeGroup legalEntities;
     }
 
-    @Getter
-    @Setter
+    @Data
     public static class FeeGroup {
         private BigDecimal taker;
         private BigDecimal maker;
