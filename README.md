@@ -49,3 +49,5 @@ POST http://localhost:8080/calculate
 - Jsoup
 - Lombok
 - Maven
+- JUnit 5
+- Mockito
